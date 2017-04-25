@@ -124,4 +124,41 @@ class ManualViewController: UIViewController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
+    
+    func toggleTorch(on: Bool) {
+        if let captureDevice = captureDevice, captureDevice.hasTorch {
+            do {
+                try captureDevice.lockForConfiguration()
+                
+                if on == true {
+                    captureDevice.torchMode = .on
+                } else {
+                    captureDevice.torchMode = .off
+                }
+                
+                try captureDevice.setTorchModeOnWithLevel(1)
+                
+                captureDevice.unlockForConfiguration()
+            } catch {
+                print("Torch could not be used")
+            }
+        } else {
+            print("Torch is not available")
+        }
+    }
+    
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        if motion == .motionShake {
+            if let captureDevice = captureDevice {
+                switch captureDevice.torchMode {
+                case .on:
+                    toggleTorch(on: false)
+                case .off:
+                    toggleTorch(on: true)
+                default:
+                    break
+                }
+            }
+        }
+    }
 }
