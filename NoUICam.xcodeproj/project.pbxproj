@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8673308E7C3C4FA1B52B25EE /* Pods_NoUICam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C24AA831905DDE92C9D72C9 /* Pods_NoUICam.framework */; };
 		CE0C77131EAFDD7D00A07F2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0C77121EAFDD7D00A07F2C /* ViewController.swift */; };
+		CE0C77151EAFF1C100A07F2C /* ManualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0C77141EAFF1C100A07F2C /* ManualViewController.swift */; };
 		CE3AB0571EABAFA0008FE0E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3AB0561EABAFA0008FE0E1 /* AppDelegate.swift */; };
 		CE3AB05C1EABAFA0008FE0E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3AB05A1EABAFA0008FE0E1 /* Main.storyboard */; };
 		CE3AB05E1EABAFA0008FE0E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3AB05D1EABAFA0008FE0E1 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 		4C24AA831905DDE92C9D72C9 /* Pods_NoUICam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoUICam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51E56B4B9F582CA3ED4C2646 /* Pods-NoUICam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoUICam.release.xcconfig"; path = "Pods/Target Support Files/Pods-NoUICam/Pods-NoUICam.release.xcconfig"; sourceTree = "<group>"; };
 		CE0C77121EAFDD7D00A07F2C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE0C77141EAFF1C100A07F2C /* ManualViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualViewController.swift; sourceTree = "<group>"; };
 		CE3AB0531EABAFA0008FE0E1 /* NoUICam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoUICam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3AB0561EABAFA0008FE0E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE3AB05B1EABAFA0008FE0E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				CE3AB05F1EABAFA0008FE0E1 /* LaunchScreen.storyboard */,
 				CE3AB0621EABAFA0008FE0E1 /* Info.plist */,
 				CE0C77121EAFDD7D00A07F2C /* ViewController.swift */,
+				CE0C77141EAFF1C100A07F2C /* ManualViewController.swift */,
 			);
 			path = NoUICam;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE0C77131EAFDD7D00A07F2C /* ViewController.swift in Sources */,
+				CE0C77151EAFF1C100A07F2C /* ManualViewController.swift in Sources */,
 				CE3AB0571EABAFA0008FE0E1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
