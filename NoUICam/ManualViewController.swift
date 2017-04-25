@@ -132,11 +132,10 @@ class ManualViewController: UIViewController {
                 
                 if on == true {
                     captureDevice.torchMode = .on
+                    try captureDevice.setTorchModeOnWithLevel(1)
                 } else {
                     captureDevice.torchMode = .off
                 }
-                
-                try captureDevice.setTorchModeOnWithLevel(1)
                 
                 captureDevice.unlockForConfiguration()
             } catch {
